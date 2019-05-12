@@ -7,39 +7,39 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginPage">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginPageController">
    <children>
-      <Label alignment="CENTER" layoutX="181.0" layoutY="75.0" prefHeight="55.0" prefWidth="238.0" text="请输入用户信息" textAlignment="JUSTIFY">
+      <Label alignment="CENTER" layoutX="240.0" layoutY="129.0" prefHeight="55.0" prefWidth="358.0" text="请输入用户信息" textAlignment="JUSTIFY">
          <font>
-            <Font size="28.0" />
+            <Font size="36.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="173.0" prefHeight="31.0" prefWidth="57.0" text="用户名" textAlignment="CENTER">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="229.0" prefHeight="31.0" prefWidth="57.0" text="密码" textOverrun="CENTER_ELLIPSIS">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="265.0" prefHeight="31.0" prefWidth="57.0" text="用户名" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="211.0" layoutY="173.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="235.0" layoutY="321.0" prefHeight="31.0" prefWidth="57.0" text="密码" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="323.0" layoutY="262.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <TextField layoutX="211.0" layoutY="229.0">
+      <TextField layoutX="323.0" layoutY="318.0">
          <font>
             <Font size="18.0" />
          </font>
       </TextField>
-      <Button layoutX="211.0" layoutY="318.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="确认">
+      <Button layoutX="311.0" layoutY="429.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="确认">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="319.0" layoutY="318.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="取消">
+      <Button layoutX="419.0" layoutY="429.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="取消">
          <font>
             <Font size="18.0" />
          </font>
