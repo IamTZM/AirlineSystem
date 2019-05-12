@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Finish the basic switch function.">
-      <change afterPath="$PROJECT_DIR$/src/com/dbexp/check/Check.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dbexp/sample/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dbexp/sample/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dbexp/sample/controller/ManageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dbexp/sample/fxml/ManagePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/sample/HomePage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/sample/LoginPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/sample/LoginPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/sample/homePageController.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/HomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dbexp/sample/fxml/HomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/LoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dbexp/sample/fxml/LoginPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/LoginPageController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/homePageController.css" beforeDir="false" />
     </list>
@@ -88,14 +74,14 @@
           <entry key="dummy" value="7" />
           <entry key="fxml" value="209" />
           <entry key="java" value="781" />
-          <entry key="txt" value="80" />
+          <entry key="txt" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="58" />
           <entry key="JAVA" value="781" />
-          <entry key="PLAIN_TEXT" value="87" />
+          <entry key="PLAIN_TEXT" value="107" />
           <entry key="XML" value="209" />
         </counts>
       </usages-collector>
@@ -123,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="65" column="30" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="288">
+              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -223,7 +209,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1615" />
@@ -401,7 +387,7 @@
       <workItem from="1557537259306" duration="606000" />
       <workItem from="1557546421382" duration="400000" />
       <workItem from="1557639320561" duration="211000" />
-      <workItem from="1557650427916" duration="10158000" />
+      <workItem from="1557650427916" duration="10406000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, finish 2 pages.">
       <created>1557490969009</created>
@@ -417,27 +403,33 @@
       <option name="project" value="LOCAL" />
       <updated>1557660881666</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Delete some files.">
+      <created>1557661353471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557661353471</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19823000" />
+    <option name="totallyTimeSpent" value="20071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Learn" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.22050938" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.22050938" />
       <window_info id="Structure" order="4" weight="0.25" />
       <window_info id="Favorites" order="5" weight="0.3297587" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3062937" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.3062937" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -470,7 +462,8 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="First commit, finish 2 pages." />
     <MESSAGE value="Finish the basic switch function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish the basic switch function." />
+    <MESSAGE value="Delete some files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete some files." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -549,8 +542,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="288">
+          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
         </state>
       </provider>
     </entry>
