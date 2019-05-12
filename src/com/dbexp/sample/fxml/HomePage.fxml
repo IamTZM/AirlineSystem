@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -8,22 +9,28 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dbexp.sample.controller.HomeController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="177.0" prefHeight="47.0" prefWidth="359.0" text="欢迎使用票务系统" textAlignment="CENTER">
          <font>
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="277.0" layoutY="308.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="247.0" text="票务管理">
+      <Button fx:id="button_01" layoutX="277.0" layoutY="308.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="247.0" text="票务管理" onAction="#toLoginPage">
          <font>
             <Font size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
-      <Button layoutX="277.0" layoutY="401.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="247.0" text="票务查询">
+      <Button fx:id="button_02" layoutX="277.0" layoutY="401.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="247.0" text="票务查询">
          <font>
             <Font size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
    </children>
 </AnchorPane>
