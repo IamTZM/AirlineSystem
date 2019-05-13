@@ -7,25 +7,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dbexp.sample.controller.ManageController">
+<BorderPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dbexp.sample.controller.ManageController">
    <center>
       <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <ScrollPane prefHeight="200.0" prefWidth="200.0">
                <content>
-                  <TableView prefHeight="362.0" prefWidth="928.0">
+                  <TableView fx:id="table" prefHeight="362.0" prefWidth="928.0">
                     <columns>
-                      <TableColumn prefWidth="90.0" text="航班号" />
-                      <TableColumn prefWidth="85.0" text="起点" />
-                        <TableColumn prefWidth="85.0" text="终点" />
-                        <TableColumn prefWidth="110.0" text="日期" />
-                        <TableColumn prefWidth="70.0" text="起飞时刻" />
-                        <TableColumn prefWidth="70.0" text="到达时刻" />
-                        <TableColumn prefWidth="70.0" text="剩余座位" />
-                        <TableColumn prefWidth="110.0" text="票价" />
-                        <TableColumn prefWidth="70.0" text="折扣票数" />
-                        <TableColumn prefWidth="60.0" text="折扣率" />
-                        <TableColumn prefWidth="104.0" text="航空公司" />
+                      <TableColumn fx:id="fid" prefWidth="90.0" text="航班号"/>
+                      <TableColumn fx:id="oplace" prefWidth="85.0" text="起点" />
+                      <TableColumn fx:id="tplace" prefWidth="85.0" text="终点" />
+                      <TableColumn fx:id="fdate" prefWidth="110.0" text="日期" />
+                      <TableColumn fx:id="otime" prefWidth="70.0" text="起飞时刻" />
+                      <TableColumn fx:id="ttime" prefWidth="70.0" text="到达时刻" />
+                      <TableColumn fx:id="remainder" prefWidth="70.0" text="剩余座位" />
+                      <TableColumn fx:id="price" prefWidth="110.0" text="票价" />
+                      <TableColumn fx:id="dcnt" prefWidth="70.0" text="折扣票数" />
+                      <TableColumn fx:id="drate" prefWidth="60.0" text="折扣率" />
+                      <TableColumn fx:id="comp" prefWidth="104.0" text="航空公司" />
                     </columns>
                   </TableView>
                </content>
@@ -51,8 +51,8 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="469.0" layoutY="26.0" />
-                        <DatePicker layoutX="469.0" layoutY="72.0" />
+                        <TextField fx:id="flight_no" layoutX="469.0" layoutY="26.0" />
+                        <DatePicker fx:id="flight_date" layoutX="469.0" layoutY="72.0" />
                         <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="397.0" layoutY="75.0" text="日期：">
                            <font>
                               <Font size="18.0" />
@@ -62,7 +62,7 @@
                   </Pane>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="418.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="94.0" text="查询">
+                        <Button alignment="CENTER" contentDisplay="CENTER" defaultButton="true" layoutX="418.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="94.0" text="查询" onAction="#QUERY_M">
                            <font>
                               <Font size="18.0" />
                            </font>
