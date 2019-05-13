@@ -21,7 +21,7 @@ public class ManageController implements Initializable {
 
     @FXML
     private void OUT_M(ActionEvent event) {
-        application.useroutmain();
+        application.gotoHome();
     }
 
     @Override

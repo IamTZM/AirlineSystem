@@ -33,9 +33,8 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    private void CLEAR_M(ActionEvent event) {
-        account.setText(null);
-        password.setText(null);
+    private void BACK_M(ActionEvent event) {
+        application.gotoHome();
     }
 
     @Override

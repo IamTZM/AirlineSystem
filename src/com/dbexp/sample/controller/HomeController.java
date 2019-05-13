@@ -22,6 +22,11 @@ public class HomeController implements Initializable {
         application.gotoLogin();
     }
 
+    @FXML
+    public void toQueryPage(ActionEvent event) {
+        application.gotoManage();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
