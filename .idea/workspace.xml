@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Test MySQL connection.">
-      <change afterPath="$PROJECT_DIR$/src/com/dbexp/access/Conn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dbexp/dao/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Finish the query function.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/controller/ManageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/controller/ManageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/fxml/ManagePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/fxml/ManagePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/check/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/check/Check.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AirlineSystem/com/dbexp/sample/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dbexp/sample/controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dbexp/sample/controller/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dbexp/sample/fxml/ManagePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dbexp/sample/fxml/ManagePage.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,14 +63,14 @@
     <session id="930706052">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -80,15 +78,15 @@
           <entry key="css" value="133" />
           <entry key="dummy" value="7" />
           <entry key="fxml" value="573" />
-          <entry key="java" value="2324" />
-          <entry key="txt" value="154" />
+          <entry key="java" value="2439" />
+          <entry key="txt" value="182" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="133" />
-          <entry key="JAVA" value="2324" />
-          <entry key="PLAIN_TEXT" value="161" />
+          <entry key="JAVA" value="2439" />
+          <entry key="PLAIN_TEXT" value="189" />
           <entry key="XML" value="573" />
         </counts>
       </usages-collector>
@@ -117,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/fxml/ManagePage.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="1296">
               <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
             </state>
           </provider>
@@ -135,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dbexp/access/ConnTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
+            <state relative-caret-position="648">
               <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
             </state>
           </provider>
@@ -144,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/controller/ManageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2064">
-              <caret line="90" column="57" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="57" />
+            <state relative-caret-position="1584">
+              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,8 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,6 +262,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +417,8 @@
       <workItem from="1557639320561" duration="211000" />
       <workItem from="1557650427916" duration="10406000" />
       <workItem from="1557745424324" duration="2862000" />
-      <workItem from="1557752812872" duration="9500000" />
+      <workItem from="1557752812872" duration="9551000" />
+      <workItem from="1557807282442" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="First commit, finish 2 pages.">
       <created>1557490969009</created>
@@ -463,26 +462,34 @@
       <option name="project" value="LOCAL" />
       <updated>1557748477469</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finish the query function.">
+      <created>1557762713236</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557762713236</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32433000" />
+    <option name="totallyTimeSpent" value="32982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Learn" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.22587131" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.6703755" visible="true" weight="0.22855228" />
       <window_info id="Structure" order="4" weight="0.25" />
       <window_info id="Favorites" order="5" weight="0.3297587" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.3062937" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.3062937" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -518,7 +525,8 @@
     <MESSAGE value="Finish the basic switch function." />
     <MESSAGE value="Finish the basic UI." />
     <MESSAGE value="Test MySQL connection." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test MySQL connection." />
+    <MESSAGE value="Finish the query function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish the query function." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -554,9 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="25" column="27" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -564,9 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="35" column="23" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,6 +576,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/css/ManageStyle.css" />
+    <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/style/ManageStyle.css" />
+    <entry file="file://$PROJECT_DIR$/src/com/dbexp/dao/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2266">
+          <caret line="9" column="96" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/fxml/ManagePage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -586,90 +605,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dbexp/access/ConnTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
+        <state relative-caret-position="648">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/css/ManageStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/style/ManageStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dbexp/dao/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2266">
-          <caret line="9" column="96" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="96" />
-          <folding>
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1733#1734#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/fxml/ManagePage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dbexp/sample/controller/ManageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2064">
-          <caret line="90" column="57" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="57" />
+        <state relative-caret-position="1584">
+          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

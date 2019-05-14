@@ -58,8 +58,31 @@ public class ManageController implements Initializable {
 
     private Main application;
 
+    // define DateFormat
+    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
     public void setApp(Main application){
         this.application = application;
+    }
+
+    private void insertData2Table(ResultSet rs, ObservableList<Ticket> list) throws SQLException {
+        while (rs.next()) {
+            Ticket ticket = new Ticket();
+            ticket.setFid(rs.getString("FID"));
+            ticket.setOplace(rs.getString("ORIGIN_PLACE"));
+            ticket.setTplace(rs.getString("TEMINAL_PLACE"));
+            ticket.setFdate(sdf.format(rs.getDate("FDATE")));
+            ticket.setOtime(rs.getString("ORIGIN_TIME"));
+            ticket.setTtime(rs.getString("TEMINAL_TIME"));
+            ticket.setRemainder(rs.getString("REMAINDER"));
+            ticket.setPrice(rs.getString("PRICE"));
+            ticket.setDcnt(rs.getString("DISCOUNT_CNT"));
+            ticket.setDrate(rs.getString("DISCOUNT_RATE"));
+            ticket.setComp(rs.getString("COMPANY"));
+            list.add(ticket);
+            table.setEditable(true);
+            table.setItems(list);
+        }
     }
 
     @FXML
@@ -87,35 +110,19 @@ public class ManageController implements Initializable {
             stmt = conn.createStatement();
 
             // execute sql
-            String sql;
-            sql = "SELECT * FROM FLIGHT WHERE FID = '" + fid_str + "' AND FDATE = str_to_date('" + fdate_str + "', '%Y-%m-%d')";
-            System.out.println(sql);
-            ResultSet rs = stmt.executeQuery(sql);
-
-            // define DateFormat
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            StringBuilder sql = new StringBuilder("SELECT * FROM FLIGHT WHERE FID = '");
+            sql.append(fid_str);
+            sql.append("' AND FDATE = str_to_date('");
+            sql.append(fdate_str);
+            sql.append("', '%Y-%m-%d')");
+            System.out.println(sql.toString());
+            ResultSet rs = stmt.executeQuery(sql.toString());
 
             // get list
             ObservableList<Ticket> list = FXCollections.observableArrayList();
 
             //STEP 4: Extract data from result set
-            while (rs.next()) {
-                Ticket ticket = new Ticket();
-                ticket.setFid(rs.getString("FID"));
-                ticket.setOplace(rs.getString("ORIGIN_PLACE"));
-                ticket.setTplace(rs.getString("TEMINAL_PLACE"));
-                ticket.setFdate(sdf.format(rs.getDate("FDATE")));
-                ticket.setOtime(rs.getString("ORIGIN_TIME"));
-                ticket.setTtime(rs.getString("TEMINAL_TIME"));
-                ticket.setRemainder(rs.getString("REMAINDER"));
-                ticket.setPrice(rs.getString("PRICE"));
-                ticket.setDcnt(rs.getString("DISCOUNT_CNT"));
-                ticket.setDrate(rs.getString("DISCOUNT_RATE"));
-                ticket.setComp(rs.getString("COMPANY"));
-                list.add(ticket);
-                table.setEditable(true);
-                table.setItems(list);
-            }
+            insertData2Table(rs, list);
 
             //STEP 5: Clean-up environment
             rs.close();
@@ -184,23 +191,7 @@ public class ManageController implements Initializable {
             ObservableList<Ticket> list = FXCollections.observableArrayList();
 
             //STEP 4: Extract data from result set
-            while (rs.next()) {
-                Ticket ticket = new Ticket();
-                ticket.setFid(rs.getString("FID"));
-                ticket.setOplace(rs.getString("ORIGIN_PLACE"));
-                ticket.setTplace(rs.getString("TEMINAL_PLACE"));
-                ticket.setFdate(sdf.format(rs.getDate("FDATE")));
-                ticket.setOtime(rs.getString("ORIGIN_TIME"));
-                ticket.setTtime(rs.getString("TEMINAL_TIME"));
-                ticket.setRemainder(rs.getString("REMAINDER"));
-                ticket.setPrice(rs.getString("PRICE"));
-                ticket.setDcnt(rs.getString("DISCOUNT_CNT"));
-                ticket.setDrate(rs.getString("DISCOUNT_RATE"));
-                ticket.setComp(rs.getString("COMPANY"));
-                list.add(ticket);
-                table.setEditable(true);
-                table.setItems(list);
-            }
+            insertData2Table(rs, list);
 
             //STEP 5: Clean-up environment
             rs.close();
